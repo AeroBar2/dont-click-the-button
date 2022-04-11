@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!-- isn't it fun to do everything on one file? -->
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <style>
+    #container {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      border: solid 5px;
+      border-radius: 8px;
+      padding: 1em;
+      margin: auto;
+      width: 70%;
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Rubik', Verdana, sans-serif;
+      font-size: 170%;
+    }
+    #button-box {
+      border: solid 5px;
+      border-radius: 8px;
+      padding: 1em;
+      margin: auto;
+      width: 80%;
+      text-align: center;
+    }
+    #center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    #button {
+      border: solid 5px;
+      border-radius: 8px;
+      background-color: gainsboro;
+      font-family: 'Rubik', Verdana, sans-serif;
+      font-size: 115%;
+      size: 0%;
+      width: 70%;
+      padding: 1em;
+    }
+    p {
+      font-family: 'Rubik', Verdana, sans-serif;
+      font-size: 102%;
+    }
+    .testimonial {
+      font-family: 'Caveat', cursive;
+      font-size: 145%;
+    }
+    .testimonial-box {
+      border: solid 3px;
+      margin: 1em;
+      background-color: gainsboro;
+    }
+    a {
+      font-family: 'Rubik', Verdana, sans-serif;
+      font-size: 102%;
+    }
+  </style>
+  <title>Don't Click the Button</title>
+</head>
+<body>
+  <section id="container">
+    <h1>Don't Click the Button</h1>
+    <div id="button-box">
+      <div id=""center>
+        <button id="button" onclick="update(numTimesClicked)">plz don't click me</button>
+      </div>
+    </div>
+    <br>
+    <div id="info-box">
+      <p>
+        Seriously, don't. I'm not joking. Buttons possess more power than you might realize. <br>
+        If in doubt, refer to the testimonials below: <br><br>
+        <div class="testimonial-box">
+          <p class="testimonial">
+            "I never saw what was coming. I knew I should have heeded the warnings." <br>
+            &nbsp;&nbsp; - Anonymous
+          </p>
+        </div>
+        <div class="testimonial-box">
+          <p class="testimonial">
+            "It burned down my house" <br>
+            &nbsp;&nbsp; - Some guy
+          </p>
+        </div>
+        <div class="testimonial-box">
+          <p class="testimonial">
+            "I had to desert it. And give it up. And let it down." <br>
+            &nbsp;&nbsp; - Rick
+          </p>
+        </div>
+        <a href="https://github.com/AeroBar2">Aero</a>
+      </p>
+    </div>
+  </section>
+  <script>
+    let numTimesClicked = 0;
+    bt = document.getElementById("button");
+
+    function update(num) {
+      switch (num) {
+        case 0:
+          bt.innerHTML = "You clicked me ;-;";
+          numTimesClicked++;
+          break;
+        
+        case 1:
+          bt.innerHTML = "stap";
+          numTimesClicked++;
+          break;
+
+        case 2:
+          bt.innerHTML = "bruh ಠ_ಠ";
+          numTimesClicked++;
+          break;
+        
+        case 3:
+          bt.innerHTML = "not cool  人(_ _*) ";
+          numTimesClicked++;
+          break;
+        
+        case 4:
+          bt.innerHTML = "Buttons have feelings ya know";
+          numTimesClicked++;
+          break;
+        
+        case 5:
+          bt.innerHTML = "...";
+          numTimesClicked++;
+          break;
+        
+        case 6:
+          bt.innerHTML = "you are so stubborn!!! (╯°□°）╯︵ ┻━┻"
+
+        case 7:
+          bt.innerHTML = "you know";
+          numTimesClicked++;
+          break;
+        
+        case 8:
+          bt.innerHTML = "if this is the way";
+          numTimesClicked++;
+          break;
+        
+        case 9:
+          bt.innerHTML = "it's gonna be";
+          numTimesClicked++;
+          break;
+        
+        case 10:
+          bt.innerHTML = "then why don't I";
+          numTimesClicked++;
+          break;
+
+        case 11:
+          bt.innerHTML = "step things up a notch?";
+          numTimesClicked++;
+          break;
+        
+        case 12:
+          bt.innerHTML = "ha ha";
+          alert("I COMMAND THOU TO STAP");
+          numTimesClicked++;
+          break;
+        
+        case 13:
+          bt.innerHTML = "bruh, how did that";
+          numTimesClicked++;
+          break;
+
+        case 14:
+          bt.innerHTML = "not stop you?";
+          numTimesClicked++;
+          break;
+        
+        case 15:
+          bt.innerHTML = "hmm";
+          numTimesClicked++;
+          break;
+        
+        case 16:
+          bt.innerHTML = "well then";
+          numTimesClicked++;
+          break;
+        
+        case 17:
+          bt.innerHTML = "try this, meatbag! >:)";
+          numTimesClicked++;
+          break;
+        
+        case 18:
+          bt.innerHTML= "you probably died   (☞ﾟヮﾟ)☞";
+          alert("I");
+          alert("AM");
+          alert("YOUR");
+          alert("DOOM");
+          alert("!!!!!!!!!1111!!1!1111!11!!1!!");
+          for (i = 0; i <= 100; i++) {
+            alert("Alert " + i + " of 100");
+          }
+          numTimesClicked++;
+          break;
+        
+        case 19:
+          bt.innerHTML = "Wait, you didn't die?!??!?!!!11!!?1";
+          numTimesClicked++;
+          break;
+        
+        case 20:
+          bt.innerHTML = "hmm";
+          numTimesClicked++;
+          break;
+
+        case 21:
+          bt.innerHTML = "then try my question thingy!!!";
+          numTimesClicked++;
+          break;
+        
+        case 22:
+          bt.innerHTML = "..."
+          function quiz() {
+            let question = prompt("When did I last eat pizza?", "You cannot best this, mortal");
+            if (question == null || question == "") {
+              alert("ha, you chickened out!!!!!!!!1!11!1!1");
+            } else if (question !== "Wednesday, September 14, 2022") {
+              alert("Nice try, but that wasn't the correct answer! I'll let you pass though, if you dare >:)");
+            } else {
+              alert("well, you somehow did it I guess");
+            }
+          }
+          quiz();
+          numTimesClicked++;
+          break;
+        
+        case 23:
+          bt.innerHTML = "well, seeing that you passed all of that";
+          numTimesClicked++;
+          break;
+        
+        case 24:
+          bt.innerHTML = "I will now ban you";
+          numTimesClicked++;
+          break;
+        
+        case 25:
+          bt.innerHTML = "If you dare to click me again";
+          numTimesClicked++;
+          break;
+        
+        case 26:
+          document.body.innerHTML = "";
+        
+        default:
+          bt.innerHTML = "???";
+      }
+    }
+  </script>
+</body>
+</html>
